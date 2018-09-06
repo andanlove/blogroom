@@ -10,8 +10,7 @@
 	</head>
 	<body>
 		<div class="main-wrapper">
-		<header >
-
+	<header id="large-header" > 
 			<nav>
 				<div class="logo"><a href="index.html">淳尚</a></div>
 				<ul>
@@ -22,7 +21,9 @@
 					<li id="sidebar_trigger"><a href="#">项目浏览</a></li>
 				</ul>
 			</nav>
-			<div id="banner">
+			<canvas id="demo-canvas">
+			</canvas>
+			<div id="banner"  class="main-title">
 				<div class="inner">
 					<h1>淳尚</h1>
 					<p class="sub-heading">淳尚的个人空间，欢迎您的到来。</p>
@@ -33,7 +34,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="content">
+		<div class="content ">
 			<section class="gray-section">
 				 <div class="wrapper">
 				 	<div class="">
@@ -44,18 +45,19 @@
 				 	<div class="icon-group">
 				 		<span class="icon" id="target"><i>简历</i> </span>
 				 		<span class="icon"><i>经验</i></span>
-				 		<span class="icon"><i>没想好</i></span>
+				 		<span class="icon"><i>wait</i></span>
 				 	</div>
 				 </div>
 			</section>
 			<section class="green-section" >
 				<div class="article-preview">
 					<div class="img-section">
-						<img src="img/pic01.jpg" />
+						<a href="../barrage/barragepro.html"><img src="img/barrage.jpg" /></a>
 					</div>
 					<div class="text-section">
-						<h2>弹幕系统</h2>
-						<p>6666666666666666</p>
+						<h2><a href="../barrage/barragepro.html">弹幕系统</a></h2>
+						<p>使用Bootstrap+jquery基本实现弹幕发送与清除</p>
+						<p>不足：图片距离顶部的偏移量用offset函数计算不准确，还没找到原因所以个人进行的强制定位。</p>
 					</div>
 				</div>
 				<div class="article-preview">
@@ -143,5 +145,9 @@
 		<button class="back-to-top">返回顶部</button>
 		<script src="js/jquery.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
 	</body>
 </html>

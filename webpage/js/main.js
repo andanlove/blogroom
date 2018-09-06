@@ -21,9 +21,8 @@
 	know_me.on("click",function(){
 		html.animate({scrollTop:$('.gray-section').offset().top},800)
 	});
-	icons.on("mouseover",function(){
-		icons.css("cursor" , "pointer");
-	});
+	me.
+	
 	l1.on("click",function(){
 		html.animate({scrollTop:$('.gray-section').offset().top},800)
 	});	

@@ -1,0 +1,18 @@
+.m-top{
+	margin-top: 20px;
+}
+.fakeimg{
+	width: 1024px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+.dm-show div{
+	font-size: 22px;
+	line-height: 36px;
+	color: #fff;
+	left: 0;
+	top: 0;
+}
