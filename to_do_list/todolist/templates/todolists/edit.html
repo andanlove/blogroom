@@ -1,0 +1,26 @@
+{% extends "todolists/base.html" %}
+{% block title %}
+编辑
+{% endblock %}
+{% block body %}
+
+    <br>
+
+    <form method="post" action="" >
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="editTodo"></label>
+            <input name="listedit" id="editTodo" class="form-control from-control-lg" type="text" value="{{ addlistname }}" >
+            <small id="help" class="form-text text-muted">在这编辑</small>
+        </div>
+        {% if warning %}
+        <div class="alert alert-warning alert-dismissible" role="alert">
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong><center>{{ warning }}</center></strong>
+        </div>
+        {% endif %}
+        <button type="submit" class="btn btn-primary btn-lg btn-block">提交</button>
+
+    </form>
+
+{% endblock %}
